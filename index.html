@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Rodrigo Inácio da Silva - Desenvolvedor Front-end.">
+  <title>Rodrigo Inácio | Desenvolvedor Front-end</title>
+
+  <link rel="stylesheet" href="styles/styles-index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Rodrigo Inácio</a>
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active">Início</a></li>
+        <li><a href="#about" class="nav__link">Sobre</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+        <li><a href="#contact" class="nav__link">Contato</a></li>
+      </ul>
+      <a href="assets/Rodrigo_Inacio_da_Silva_CV.pdf" download class="btn btn--small">
+        <i class="fa-solid fa-download"></i> CV
+      </a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section home container">
+    <div class="home__content">
+      <img src="assets/profile.jpg" alt="Rodrigo Inácio da Silva" class="home__img">
+      <h1>Rodrigo Inácio da Silva</h1>
+      <p>Desenvolvedor Front-end focado em criar experiências digitais limpas, responsivas e acessíveis.</p>
+      <div class="home__social">
+        <a href="https://github.com/RodrigoDev25" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:rodrigo.codeshub25@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/5599999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="section about container">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou desenvolvedor front-end apaixonado por transformar ideias em interfaces modernas e intuitivas. 
+      Tenho experiência em HTML, CSS e JavaScript, além de frameworks modernos e boas práticas de desenvolvimento.
+    </p>
+    <p>
+      Busco constantemente evoluir minhas habilidades e contribuir para projetos que unam tecnologia, design e propósito.
+    </p>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="section portfolio container">
+    <h2>Projetos</h2>
+    <div class="portfolio__grid" id="projects-container">
+      <!-- Projetos são carregados pelo JS -->
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="section contact container">
+    <h2>Entre em Contato</h2>
+    <p>Tem um projeto ou oportunidade? Fale comigo:</p>
+    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn--primary">
+      <i class="fa-brands fa-whatsapp"></i> Enviar Mensagem
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Rodrigo Inácio da Silva — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts/script-index.js"></script>
+</body>
+</html>
