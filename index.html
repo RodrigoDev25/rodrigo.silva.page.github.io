@@ -1,83 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Rodrigo Inácio da Silva - Desenvolvedor Front-end.">
-  <title>Rodrigo Inácio | Desenvolvedor Front-end</title>
-
-  <link rel="stylesheet" href="styles/styles-index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Inácio da Silva | Desenvolvedor</title>
+    <link rel="stylesheet" href="styles/styles-site-rodrigo.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="#home" class="nav__logo">Rodrigo Inácio</a>
-      <ul class="nav__list">
-        <li><a href="#home" class="nav__link active">Início</a></li>
-        <li><a href="#about" class="nav__link">Sobre</a></li>
-        <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
-        <li><a href="#contact" class="nav__link">Contato</a></li>
-      </ul>
-      <a href="assets/Rodrigo_Inacio_da_Silva_CV.pdf" download class="btn btn--small">
-        <i class="fa-solid fa-download"></i> CV
-      </a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">RIS</a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">Sobre</a>
+                    <a href="portfolio.html" class="nav-link">Portfólio</a>
+                    <a href="curriculo.pdf" class="btn-download" download>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Currículo
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-  <!-- Home -->
-  <section id="home" class="section home container">
-    <div class="home__content">
-      <img src="assets/profile.jpg" alt="Rodrigo Inácio da Silva" class="home__img">
-      <h1>Rodrigo Inácio da Silva</h1>
-      <p>Desenvolvedor Front-end focado em criar experiências digitais limpas, responsivas e acessíveis.</p>
-      <div class="home__social">
-        <a href="https://github.com/RodrigoDev25" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:rodrigo.codeshub25@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://wa.me/5599999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Rodrigo Inácio da Silva</h1>
+                    <p class="hero-subtitle">Desenvolvedor Full Stack</p>
+                    <p class="hero-description">Transformando ideias em soluções digitais inovadoras através de código limpo e design inteligente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Sobre -->
-  <section id="about" class="section about container">
-    <h2>Sobre Mim</h2>
-    <p>
-      Sou desenvolvedor front-end apaixonado por transformar ideias em interfaces modernas e intuitivas. 
-      Tenho experiência em HTML, CSS e JavaScript, além de frameworks modernos e boas práticas de desenvolvimento.
-    </p>
-    <p>
-      Busco constantemente evoluir minhas habilidades e contribuir para projetos que unam tecnologia, design e propósito.
-    </p>
-  </section>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Informações Pessoais -->
+            <section class="section" data-animate>
+                <h2 class="section-title">Informações Pessoais</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Data de Nascimento</span>
+                        <span class="info-value">13 de Fevereiro de 1990</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Localização</span>
+                        <span class="info-value">São Paulo, SP - Brasil</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Idiomas</span>
+                        <span class="info-value">Português (Nativo), Inglês (Avançado)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Estado Civil</span>
+                        <span class="info-value">Solteiro</span>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Portfólio -->
-  <section id="portfolio" class="section portfolio container">
-    <h2>Projetos</h2>
-    <div class="portfolio__grid" id="projects-container">
-      <!-- Projetos são carregados pelo JS -->
-    </div>
-  </section>
+            <!-- Formação Acadêmica -->
+            <section class="section" data-animate>
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Bacharelado em Ciência da Computação</h3>
+                            <p class="timeline-subtitle">Universidade de São Paulo (USP)</p>
+                            <p class="timeline-date">2010 - 2014</p>
+                            <p class="timeline-description">Foco em desenvolvimento de software, algoritmos avançados e inteligência artificial.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Pós-Graduação em Engenharia de Software</h3>
+                            <p class="timeline-subtitle">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                            <p class="timeline-date">2015 - 2017</p>
+                            <p class="timeline-description">Especialização em arquitetura de sistemas e metodologias ágeis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Contato -->
-  <section id="contact" class="section contact container">
-    <h2>Entre em Contato</h2>
-    <p>Tem um projeto ou oportunidade? Fale comigo:</p>
-    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn--primary">
-      <i class="fa-brands fa-whatsapp"></i> Enviar Mensagem
-    </a>
-  </section>
+            <!-- Experiência Profissional -->
+            <section class="section" data-animate>
+                <h2 class="section-title">Experiência Profissional</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Desenvolvedor Full Stack Sênior</h3>
+                            <p class="timeline-subtitle">TechCorp Solutions</p>
+                            <p class="timeline-date">2020 - Presente</p>
+                            <p class="timeline-description">Liderança técnica em projetos de grande escala, desenvolvimento de APIs RESTful e arquitetura de microsserviços. Implementação de CI/CD e práticas DevOps.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Desenvolvedor Full Stack Pleno</h3>
+                            <p class="timeline-subtitle">Digital Innovations Ltd</p>
+                            <p class="timeline-date">2017 - 2020</p>
+                            <p class="timeline-description">Desenvolvimento de aplicações web responsivas, integração com bancos de dados e otimização de performance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Desenvolvedor Front-end Júnior</h3>
+                            <p class="timeline-subtitle">StartUp Web Brasil</p>
+                            <p class="timeline-date">2014 - 2017</p>
+                            <p class="timeline-description">Criação de interfaces modernas e interativas usando React e Vue.js, colaboração em equipe ágil.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Rodrigo Inácio da Silva — Todos os direitos reservados.</p>
-  </footer>
+            <!-- Competências Técnicas -->
+            <section class="section" data-animate>
+                <h2 class="section-title">Competências Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Front-end</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML5/CSS3</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Back-end</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">DevOps & Ferramentas</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <script src="scripts/script-index.js"></script>
+            <!-- CTA Portfólio -->
+            <section class="section cta-section" data-animate>
+                <div class="cta-content">
+                    <h2 class="cta-title">Conheça Meus Projetos</h2>
+                    <p class="cta-description">Explore uma seleção dos meus trabalhos mais recentes e descubra como posso agregar valor ao seu projeto.</p>
+                    <a href="portfolio.html" class="btn-primary">Ver Portfólio</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-text">© 2024 Rodrigo Inácio da Silva. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="https://wa.me/5511999999999" class="contact-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        (11) 99999-9999
+                    </a>
+                    <a href="mailto:rodrigo.silva@email.com" class="contact-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        rodrigo.silva@email.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/styles-site-rodrigo.js"></script>
 </body>
 </html>
